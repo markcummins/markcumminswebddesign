@@ -16,6 +16,7 @@
    version="1.1"
    inkscape:version="0.48.3.1 r9886"
    sodipodi:docname="head.svg">
+
   <defs
      id="defs4">
     <inkscape:path-effect
@@ -30,6 +31,8 @@
        effect="spiro"
        id="path-effect3841-4"
        is_visible="true" />
+	<style type="text/css">@import url(http://fonts.googleapis.com/css?family=Lobster);</style>
+	<style type="text/css">@import url(http://fonts.googleapis.com/css?family=Raleway);</style>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -80,7 +83,7 @@
        transform="matrix(0.97715736,0,0,0.99222798,1.5152288,954.13385)" />
     <text
        xml:space="preserve"
-       style="font-size:18.45331572999999992px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#505050;fill-opacity:1;stroke:none;font-family:Jenna Sue;-inkscape-font-specification:Limelight"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#505050;fill-opacity:1;stroke:none;font-family:Jenna Sue;-inkscape-font-specification:Limelight"
        x="14.162852"
        y="571.42535"
        id="svg_my_name"
@@ -89,15 +92,15 @@
        inkscape:label="svg_my_name"><tspan
          sodipodi:role="line"
          id="tspan3831"
-         x="14.162852"
+         x="27.162852"
          y="571.42535"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Limelight;-inkscape-font-specification:Limelight;fill:#505050;fill-opacity:1"
+										   style="font-size:20px;letter-spacing:0px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:'Lobster', cursive;-inkscape-font-specification:Limelight;fill:#505050;fill-opacity:1"
          rotate="0 0 0 0 0 0 0 0 0 0 0 0 0"
          dy="0">Mark Cummins</tspan></text>
     <text
        xml:space="preserve"
-       style="font-size:11.95925139999999942px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#505050;fill-opacity:1;stroke:none;font-family:Limelight;-inkscape-font-specification:Limelight;font-stretch:normal;font-variant:normal"
-       x="35.722633"
+		  style="font-size:9.5px;font-style:normal;font-weight:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#505050;fill-opacity:1;stroke:none;font-family:'Raleway', sans-serif;-inkscape-font-specification:Limelight;font-stretch:normal;font-variant:normal"
+       x="40.722633"
        y="604.35583"
        id="svg_wd"
        sodipodi:linespacing="125%"
@@ -105,8 +108,8 @@
        inkscape:label="svg_wd"><tspan
          sodipodi:role="line"
          id="tspan3835"
-         x="35.722633"
-         y="604.35583">WEB DEVELOPER</tspan></text>
+         x="44.722633"
+         y="602.7">WEB DEVELOPER</tspan></text>
     <path
        id="globe"
        d="m 55.788324,952.49738 c 10.070617,1.15611 19.508134,5.41376 27.05302,12.04103 l -12.140481,3.31638 c -2.334019,-3.49411 -4.856406,-6.60924 -7.498069,-9.27337 -2.381948,-2.40095 -4.870907,-4.44318 -7.41447,-6.08404 l 0,0 z m 31.58285,16.57088 c 4.355947,4.95049 7.793449,10.83994 9.962509,17.46607 l -15.981476,4.36563 c -1.97957,-6.6069 -4.585561,-12.70567 -7.622911,-18.10472 l 13.641878,-3.72698 0,0 z m 11.404825,22.84161 c 1.435641,6.79589 1.414461,13.59603 0.151584,20.05583 l -13.659702,3.7316 c -0.08359,-6.1819 -0.886129,-12.7393 -2.472237,-19.4218 l 15.980355,-4.36563 0,0 z m -1.481336,26.27163 c -3.191165,9.5993 -9.225735,18.1137 -17.370291,24.2618 1.375448,-2.7113 2.50456,-5.7374 3.357248,-9.0202 0.958575,-3.6697 1.579423,-7.6754 1.843585,-11.9162 l 12.169458,-3.3254 0,0 z m -51.959281,33.9952 c -10.391631,-1.0291 -20.142354,-5.3542 -27.88676,-12.1827 l 12.60639,-3.4435 c 2.348508,3.5256 4.892077,6.6654 7.551574,9.3465 2.480035,2.4989 5.073765,4.6085 7.728796,6.2797 l 0,0 z m -32.405447,-16.7192 c -4.325848,-4.9327 -7.7399403,-10.7951 -9.8989681,-17.393 l 16.4262091,-4.4873 c 1.96619,6.579 4.556575,12.6506 7.574981,18.0285 l -14.102222,3.8518 0,0 z M 1.5897622,1012.689 C 0.14855125,1005.8638 0.17195978,999.02847 1.4571336,992.5374 l 14.0843774,-3.84721 c 0.07466,6.20992 0.877208,12.79881 2.474466,19.51161 l -16.4262031,4.4872 0,0 z m 1.5136583,-26.36952 c 3.2792192,-9.80085 9.5255745,-18.46469 17.9521205,-24.62069 -1.455696,2.79573 -2.637192,5.93796 -3.530008,9.35669 -0.951891,3.64472 -1.571616,7.619 -1.841356,11.82727 l -12.5807565,3.43673 0,0 z m 20.1679895,20.44622 23.527474,-6.427 -5.047014,-18.80876 -20.778809,5.6758 c -0.04126,6.15819 0.696637,12.77869 2.298349,19.55996 l 0,0 z m -2.014123,-25.40455 19.051143,-5.20456 -5.697955,-21.23788 c -5.572003,2.82145 -9.638146,9.15628 -11.822807,17.53457 -0.724504,2.77099 -1.238346,5.75793 -1.530381,8.90787 l 0,0 z m 18.658796,-27.98096 5.721365,21.32111 19.489191,-5.32383 c -1.825763,-2.56961 -3.760744,-4.88858 -5.770409,-6.9117 -6.225171,-6.27636 -13.08902,-9.69054 -19.440147,-9.08558 l 0,0 z m 28.382768,20.89841 -21.21908,5.79602 5.047015,18.80873 23.966627,-6.5472 C 74.08375,985.66721 71.414225,979.57091 68.298851,974.2786 l 0,0 z m 9.238001,23.43293 -23.966632,6.54747 5.024719,18.7244 21.242495,-5.8028 c 0.03345,-6.1293 -0.707786,-12.7204 -2.300582,-19.46907 l 0,0 z m 2.023041,25.31467 -19.522631,5.3329 5.743658,21.4044 c 5.782665,-2.7094 10.00263,-9.151 12.239678,-17.7383 0.731192,-2.7979 1.246149,-5.8141 1.539295,-8.999 l 0,0 z m -19.130284,28.1103 -5.721359,-21.3212 -19.085697,5.2136 c 1.844705,2.5978 3.800868,4.9405 5.829477,6.9872 6.078046,6.1211 12.756873,9.5208 18.977579,9.1204 l 0,0 z m -27.969241,-21.0142 20.805561,-5.6836 -5.024722,-18.7245 -23.527472,6.4271 c 1.999637,6.6374 4.655787,12.7067 7.746633,17.981 z"

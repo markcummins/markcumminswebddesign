@@ -459,7 +459,6 @@ h3,h4{
 	color: #fff;
 	background-color: transparent;
 	font-family: 'Lobster', cursive;
-/*	font-family: 'Raleway', sans-serif;*/
 }
 .navbar-header.active, .navbar-header.active > a, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
 	color: #de9100;
