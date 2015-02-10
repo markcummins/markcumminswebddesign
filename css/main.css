@@ -531,3 +531,15 @@ h3,h4{
 	margin: 0; 
 	padding: 0;
 }
+
+.share-buttons{
+	list-style: none;
+}
+
+.share-buttons li{
+	display: inline;
+}
+
+.share-buttons{
+	text-align: right;
+}
