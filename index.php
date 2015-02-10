@@ -286,11 +286,9 @@ $base_url = "http://127.0.0.1/tests/svg_test/"?>
 											<div class="container">
 												<!-- Example row of columns -->
 												<div class="row">	
-													<div class="row">
-														<div class="col-lg-12 text-center">
-															<h2 class="section-heading">Experience</h2>
-															<h3 class="section-subheading text-muted">Web Development Experience.</h3><br/>
-														</div>
+													<div class="col-lg-12 text-center">
+														<h2 class="section-heading">Experience</h2>
+														<h3 class="section-subheading text-muted">Web Development Experience.</h3><br/>
 													</div>
 													<div class="clearfix"></div>
 
@@ -672,8 +670,7 @@ echo file_get_contents('svg/os.svg');
 										></iframe>
 							</div>
 							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-								<button type="button" class="btn btn-primary">Save changes</button>
+								<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
 							</div>
 						</div>
 					</div>
