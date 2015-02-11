@@ -1,5 +1,6 @@
 <?php
-$base_url = "http://127.0.0.1/tests/svg_test/"?>
+	$base_url = "http://127.0.0.1/tests/svg_test/";
+?>
 <!DOCTYPE html>
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
@@ -387,19 +388,24 @@ echo file_get_contents('svg/os.svg');
 												<h3 class="section-subheading text-muted text-center">
 													<i class="fa fa-user-secret"></i> Send me a message
 												</h3><br/>
+												
+												<form name="contact-form" id="contact-form" method="post" action="mail.php">
 												<div class="form-group">
 													<div class="input-group">
 														<span class="input-group-addon"><i class=" fa fa-user"></i></span>
-														<input class="form-control" placeholder="subject..." type="text">
+														<input class="form-control" name="subject" placeholder="subject..." type="text">
 													</div>
 												</div>
 												<div class="form-group">
 													<div class="input-group">
 														<span class="input-group-addon"><i class="fa fa-envelope"></i></span>
-														<textarea class="form-control" placeholder="message" rows="3"></textarea>
+														<textarea class="form-control" name="message" placeholder="message" rows="3"></textarea>
 													</div>
 												</div>
-												<button class="btn btn-primary pull-right" type="button"><i class="fa fa-send"></i> Send</button>
+												<span id="mail-response"></span>
+												<button id="send-mail" class="btn btn-primary pull-right" type="button"><i class="fa fa-send"></i> Send</button>
+												</form>
+												
 											</div>
 											<div class="col-sm-2 text-center split-border">
 												<div class="col-sm-6 right-border hidden-xs"></div>
@@ -710,6 +716,18 @@ w.displayEffect();
 							src="js/maps.js?key=AIzaSyAjMTyZ7wKxUBJAsxuO9silbzU5g0JB7uo">
 					</script>
 					<script src="js/main.js"></script>
+					
+					<!-- Google Analytics -->
+					<script>
+						(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+							(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+							m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+												})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+						ga('create', 'UA-54554861-2', 'auto');
+						ga('send', 'pageview');
+					</script>
+					<!-- End Google Analytics -->
 
 				</footer><
 				</body>

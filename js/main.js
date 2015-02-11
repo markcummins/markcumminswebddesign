@@ -69,6 +69,19 @@ google.maps.event.addDomListener(window, 'load', initialize);
 	
 	$(document).ready(function(){
 		
+		$('#send-mail').click(function(){
+			
+			$.ajax({
+				type: "POST",
+				url: 'mail.php',
+				data: $("#contact-form").serialize(),
+				dataType: 'html'
+			}).done(function (res) {		
+
+				$('#mail-response').html(res);
+			});
+		})
+		
 		// ======================================================
 		// Doughnut Chart
 		// ======================================================
