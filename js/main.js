@@ -71,15 +71,22 @@ google.maps.event.addDomListener(window, 'load', initialize);
 		
 		$('#send-mail').click(function(){
 			
-			$.ajax({
-				type: "POST",
-				url: 'mail.php',
-				data: $("#contact-form").serialize(),
-				dataType: 'html'
-			}).done(function (res) {		
+			if(parseInt($('#mail-num-a').html()) + parseInt($('#mail-num-b').html()) == $('#mail-ans').val()){
+				
+				$('#send-mail').hide();
+				$.ajax({
+					type: "POST",
+					url: 'mail.php',
+					data: $("#contact-form").serialize(),
+					dataType: 'html'
+				}).done(function (res) {		
 
-				$('#mail-response').html(res);
-			});
+					$('#mail-response').html(res);
+				});
+			}
+			else{
+				$('#mail-response').html('<div class="alert alert-danger"> <h5>Oops</h5> <i class="fa fa-android"></i> Looks like something doesnt add up.</div>');
+			}
 		})
 		
 		// ======================================================

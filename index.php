@@ -402,6 +402,18 @@ echo file_get_contents('svg/os.svg');
 														<textarea class="form-control" name="message" placeholder="message" rows="3"></textarea>
 													</div>
 												</div>
+													<p>Are you a bot?
+														<span id="mail-num-a"><?php echo(rand(10,50)); ?></span> + 
+														<span id="mail-num-b"><?php echo(rand(10,50)); ?></span>
+													</p>
+													
+													<div class="form-group">
+														<div class="input-group">
+															<span class="input-group-addon"><i class="fa fa-android"></i></span>
+															<input class="form-control" id="mail-ans" placeholder="answer..." type="text">
+														</div>
+													</div>
+													
 												<span id="mail-response"></span>
 												<button id="send-mail" class="btn btn-primary pull-right" type="button"><i class="fa fa-send"></i> Send</button>
 												</form>
