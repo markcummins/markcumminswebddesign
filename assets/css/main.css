@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+.navbar-default {
+	background-color: #2182f2;
+	border-bottom-width: 2px;
+	border-color: #cc0e48;
+	background-image: linear-gradient(to bottom, #2182f2 0px, #2182f2 100%);
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+	color: #fff;
+	background-color: transparent;
+	font-family: 'Lobster', cursive;
+}
+.navbar-header.active, .navbar-header.active > a, .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+	color: #de9100;
+	background-color: #fff;
+	background-image: linear-gradient(to bottom, #fff 0px, #fff 100%);
+}
+
+
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+	color: #fff;
+	background-color: transparent;
+}
+.navbar-default .navbar-nav > li > a {
+	font-family: 'Lobster', cursive;
+	color: #fff;
+}
+
+body {
+	padding-top: 0px;/*50px*/
+	padding-bottom: 0px;
+}
+
+body,h3,h4, p{
+	font-family: 'Raleway', sans-serif;
+}
+
+h1,h2{
+	font-family: 'Lobster', cursive;
+}
+h1, .jumbotron h1{
+	font-size: 44px;
+}
+h2{
+	font-size: 32px;
+}
+
+
+.table-custom th, .table-custom td{
+	position:relative;
+	padding:1px !important;
+}
+
+.table-custom {
+	font-size: 13px;
+}
+
+.table-custom td div{
+	/*padding:6px !important;*/
+}
+
+.table-custom small{
+	position:absolute;
+	left:40%;
+	padding:2px !important;
+	color: rgba(74, 74, 74, 0.65);
+	background-color: rgba(52, 52, 52, 0.07);
+	width:45px;
+	text-align: center;
+}
+
+.fa-res-check{
+	color: #A3CB1F;
+}
+.fa-res-square{
+	color: #F00000;
+}
+
+.crest img{
+	display: block;
+	margin: auto;
+	width: 190px;
+	height: 190px;
+}
+
+#pred_labels, .pred_label h1, .pred_label h2{
+	text-align: center;
+	white-space: nowrap; 
+	overflow: hidden;
+	text-overflow: ellipsis; 
+	height:55px;
+}
+.pred_label h2{
+	padding:8px 0px;
+}
+
+.w-lbl{
+	background-color: #2182F2;
+	display: block;
+	background-image: linear-gradient(to bottom, #2182F2 0px, #2182F2 100%);
+}
+
+.d-lbl{
+	background-color: #CC0E48;
+	display: block;
+	background-image: linear-gradient(to bottom, #CC0E48 0px, #CC0E48 100%);
+}
+
+.l-lbl{
+	background-color: #DE9100;
+	display: block;
+	background-image: linear-gradient(to bottom, #DE9100 0px, #DE9100 100%);
+}
+
+#pred-chart{
+}
+
+.top-jumbotron{
+	margin-bottom: 0px;
+	padding: 0px;
+	text-align: center;
+	background: url(../img/utd.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	min-height:480px;
+	height:65vh;
+}
+
+.top-jumbotron h1{
+	padding-top: 12vh;		
+}
+.top-jumbotron h2{
+	color: #2182F2;
+	font-size: 8rem;
+}
+
+.top-jumbotron .container{
+	background: none repeat scroll 0% 0% rgba(40, 40, 40, 0.8);
+	height: 100%;
+	width: 100%;
+}
+
+.top-jumbotron h1:after{
+	color: #2182F2;
+	font-size: 18rem;
+	border-bottom: 2px solid #CC0E48;
+	content: "Gambletron";
+}
+
+@media(max-width:767px) {
+	.top-jumbotron h1{
+		padding-top: 12vh;			
+	}
+	.top-jumbotron h1:after{
+		font-size:10.5rem;
+		border-bottom: 0px;
+	}
+}
+
+@media (max-width: 480px) {
+	
+	.top-jumbotron h1{
+		padding-top: 12vh;		
+	}
+	.top-jumbotron h1:after{
+		border-bottom: 0px;
+		font-size: 18rem;
+		content: "GT";
+	}
+}
+
+.footer{
+
+	padding:40px 0px;
+	/*
+	background-color: #333;
+*/
+	color:#2182F2;
+}
+
+
+
+
+
+
+
