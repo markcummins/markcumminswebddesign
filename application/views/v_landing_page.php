@@ -249,7 +249,7 @@
 											<div class="row">
 												<br/>
 												<div class="col-md-3 col-sm-6 portfolio-item">
-													<a href="<?php echo base_url('/gambletron');?>" target="_blank" class="portfolio-link" >
+													<a href="<?php echo base_url('/gambletron');?>" class="portfolio-link" >
 														<div class="portfolio-hover">
 															<div class="portfolio-hover-content">
 																<span class="fa-stack fa-lg">

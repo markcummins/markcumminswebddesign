@@ -40,43 +40,47 @@ $(document).ready(function(){
 		var json_file_table = 'assets/json/tables/' + $(this).attr('id') + '_2014_TABLE.json';
 		var json_file_fixtures = 'assets/json/fixtures/' + $(this).attr('id') + '_2014_FIXTURES.json';
 		
-		render_page(json_file_table, json_file_fixtures);
+		get_table_get_fixtures(json_file_table, json_file_fixtures);
 	});			
 	
 	if($('#fb-table').html() == ""){
 		
-		render_page('assets/json/tables/PL_2014_TABLE.json', 'assets/json/fixtures/PL_2014_FIXTURES.json');
+		get_table_get_fixtures('assets/json/tables/PL_2014_TABLE.json', 'assets/json/fixtures/PL_2014_FIXTURES.json');
 	}
 	
 	function render_page(json_file_table, json_file_fixtures){
+		
+		render_league_table(window.league_table, 'simple');
+		get_win_avg_table(window.league_table);
+		get_upcoming_fixtures(window.league_fixtures);		
+	}
 	
-		var response = "";
-
-		var data_a;
-		var data_b;
+	function get_table_get_fixtures(json_file_table, json_file_fixtures){
 		
 		$.ajax({
 			url: json_file_table,  
 			dataType: 'json',
 			type: 'GET',
-		}).success(function(data_a) {
-		
-			window.league_table = data_a;
-			render_league_table(data_a, 'simple');
-			get_win_avg_table(data_a);
+		}).success(function(data_table) {
+
+			get_fixtures(json_file_fixtures, data_table);
 		});
+	}
+	
+	function get_fixtures(json_file_fixtures, data_table){
+		
+		var data_b;
 		
 		$.ajax({
 			url: json_file_fixtures,  
 			dataType: 'json',
 			type: 'GET',
-		}).success(function(data_b) {
+		}).success(function(data_fixtures) {
 
-			window.league_fixtures = data_b;
-			get_upcoming_fixtures(data_b);			
+			window.league_table = data_table;
+			window.league_fixtures = data_fixtures;
+			render_page();
 		});
-		
-		
 	}
 	
 	function get_matchdays(data){

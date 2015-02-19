@@ -63,8 +63,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $active_group = 'default';
 $active_record = TRUE;
 
-$db['default']['username'] = 'mark';
-$db['default']['password'] = 'mark';
+$db['default']['username'] = 'markov';
+$db['default']['password'] = 'comminski';
 $db['default']['hostname'] = 'localhost';
 $db['default']['database'] = 'football_data';
 $db['default']['dbdriver'] = 'mysqli';
