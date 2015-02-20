@@ -19,9 +19,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<script src="<?=base_url('assets/js/vendor/modernizr-2.6.2-respond-1.1.0.min.js');?>"></script>
 	</head>
 <body>
+	
 <!--[if lt IE 7]>
 <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 <![endif]-->
+	
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
 	<div class="container">
 		<div class="navbar-header">
@@ -36,7 +38,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">
 				<li><a href="<?php echo base_url('');?>">Mark</a></li>
-				<li><a href="<?php echo base_url('admin');?>">Admin</a></li>
+<!--				<li><a href="<?php echo base_url('admin');?>">Admin</a></li>-->
 			</ul>
 			<ul class="nav navbar-nav navbar-right">
 				<li class="dropdown active">

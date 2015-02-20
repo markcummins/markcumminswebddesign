@@ -143,7 +143,6 @@ $(document).ready(function(){
 	function view_fixture(home, away){
 		
 		var data = window.league_fixtures;
-		console.log(data);
 		
 		$.each( data['fixtures'], function( index, value ){
 
