@@ -11,7 +11,11 @@
 	<title></title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-
+	<meta property="og:title" content="Mark Cummins Web Design" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="<?php echo base_url(); ?>" />
+	<meta property="og:image" content="<?php echo base_url('assets/img/meta-logo.png'); ?>" />
+	
 	<link rel="stylesheet" href="<?php echo base_url('assets/css_fe/normalize.min.css');?>">
 	<link rel="stylesheet" href="<?php echo base_url('assets/css_fe/bootstrap.min.css');?>">
 

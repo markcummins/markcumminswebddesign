@@ -11,7 +11,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<meta property="og:title" content="Mark Cummins Web Design" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="<?php echo base_url(); ?>" />
-		<meta property="og:image" content="<?php echo base_url('assets/img/meta-logo.png'); ?>" />
+		<meta property="og:image" content="<?php echo base_url('assets/img/portfolio/gt.png'); ?>" />
 
 		<link rel="stylesheet" href="<?=base_url('assets/css/bootstrap.min.css');?>">	
 		<link rel="stylesheet" href="<?=base_url('assets/css/bootstrap-theme.min.css');?>">
