@@ -8,6 +8,10 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<title>GambleTron</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta property="og:title" content="Mark Cummins Web Design" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="<?php echo base_url(); ?>" />
+		<meta property="og:image" content="<?php echo base_url('assets/img/meta-logo.png'); ?>" />
 
 		<link rel="stylesheet" href="<?=base_url('assets/css/bootstrap.min.css');?>">	
 		<link rel="stylesheet" href="<?=base_url('assets/css/bootstrap-theme.min.css');?>">
@@ -33,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a class="navbar-brand" href="<?php echo base_url();?>">GambleTron</a>
+			<a class="navbar-brand" href="<?php echo base_url('gambletron');?>">GambleTron</a>
 		</div>
 		<div id="navbar" class="navbar-collapse collapse">
 			<ul class="nav navbar-nav">

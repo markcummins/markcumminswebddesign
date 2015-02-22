@@ -755,6 +755,6 @@ w.displayEffect();
 					</script>
 					<!-- End Google Analytics -->
 
-				</footer><
+				</footer>
 				</body>
 				</html>
