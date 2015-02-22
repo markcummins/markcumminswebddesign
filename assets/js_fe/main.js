@@ -76,7 +76,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 				$('#send-mail').hide();
 				$.ajax({
 					type: "POST",
-					url: 'mail.php',
+					url: 'ajax/send_mail',
 					data: $("#contact-form").serialize(),
 					dataType: 'html'
 				}).done(function (res) {		

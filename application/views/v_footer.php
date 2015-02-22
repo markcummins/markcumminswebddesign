@@ -35,6 +35,7 @@
 						   r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
 	ga('create','UA-XXXXX-X');ga('send','pageview');
 </script>
+<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54ea4b4d55da3be8" async="async"></script>
 </footer>
 
 </body>

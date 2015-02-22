@@ -128,19 +128,35 @@
 												</div>
 											<div class="col-sm-6 col-lg-8 left-border">
 												<h2>About,</h2>
-												<p>Im a <span class="lead">web developer</span> with 
-													<span class="lead"><a href="http://bluechiefsolutions.com/">BlueChief Social
+												<p>I'm a <span class="lead">web developer/designer. </span> 
+													I create 
+													<span class="lead">Web Applications, Websites &amp; CMS systems.</span> 
+													I am currently based in Limerick 
+													and build cool 
+													<span class="lead">responsive websites</span> like this one.</p>
+													
+												<p>
+													I worked with
+													<span class="lead"><a href="http://bluechiefsolutions.com/"> BlueChief Social
 														<i class=" fa fa-facebook"></i> 
 														<i class=" fa fa-twitter"></i> 
 														<i class=" fa fa-google-plus"></i> 
 														</a>
 													</span>
-													and have been for the last year and a half. I am based in Limerick 
+													for the last year and a half as a 
+													<span class="lead">PHP developer </span>
+													helping them build all of the above. 
+													I am currently based in Limerick 
 													and build cool responsive websites like this one.</p>
 
-												<p>I graduated from UL in 2013 (Grad Dip in Computing <sup>LEVEL 9</sup>), worked
-													with the LRC (Localization Research Center) for a few months before joining
-													BlueChief. Thats it really...</p>
+												<p>I <span class="lead">graduated</span> from UL in 2013 
+													(Grad Dip in Computing <sup>LEVEL 9</sup>)
+													with <span class="lead">first class honors</span>, worked
+													with the <span class="lead">LRC</span> (Localization Research Center) 
+													for a few months as a 
+													<span class="lead">PHP developer </span>
+													before joining
+													BlueChief in November 2013</p>
 												<p> Please feel free to 
 													<span class="lead"><a href="#contact">leave some feedback</a></span>
 													at the bottom 
@@ -757,6 +773,8 @@ w.displayEffect();
 						ga('create', 'UA-54554861-2', 'auto');
 						ga('send', 'pageview');
 					</script>
+					<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-54ea4b4d55da3be8" async="async"></script>
+
 					<!-- End Google Analytics -->
 
 				</footer>

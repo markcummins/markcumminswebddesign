@@ -1,3 +1,5 @@
+I am a web developer with BlueChief Social and have been for the last year and a half. I am based in Limerick and build cool responsive websites like this one.
+
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>
@@ -8,7 +10,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<title>GambleTron</title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta property="og:title" content="Mark Cummins Web Design" />
+		<meta property="og:title" content="Gambletron | Predicting the future" />
 		<meta property="og:type" content="website" />
 		<meta property="og:url" content="<?php echo base_url(); ?>" />
 		<meta property="og:image" content="<?php echo base_url('assets/img/portfolio/gt.png'); ?>" />
