@@ -1,11 +1,11 @@
-//sql = "select * from json._links ";
+//sql = "select  * from json._links ";
 //sql += "where (homeTeamName == '"+home+"' && awayTeamName == '"+away+"')";
 //alert(sql);
 //var p = jsonsql.query(sql, data); 
 //console.log(p);
 
 $(document).ready(function(){
-	
+	 
 	// hide .navbar first
 //	$(".navbar").hide();
 //

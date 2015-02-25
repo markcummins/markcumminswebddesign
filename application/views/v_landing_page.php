@@ -37,10 +37,12 @@
 <![endif]-->
 </head>
 <body>
+	<?php $appID = (ENVIRONMENT === 'production' ? '1391582671155159' : '324879511056391'); ?>
+	<div id="fb-root"></div>
 	<script>
 		window.fbAsyncInit = function() {
 			FB.init({
-				appId      : '625376207588994',
+				appId      : <?php echo $appID;?>,
 				xfbml      : true,
 				version    : 'v2.2'
 			});
@@ -76,7 +78,6 @@
 					<li class="active"><a href="#cv">C.V</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="#" data-toggle="modal" data-target="#spotifyModal">Spotify</a></li>
 				</ul>
 				<!--
 <ul class="nav navbar-nav navbar-right">
@@ -124,7 +125,13 @@
 													<span style="color:#cc0e48; margin-left:-20px;">,</span>
 													</h1>
 												<h2>My Name is Mark Cummins,</h2>
-
+												<br/>
+												<h2 style="display:inline;"> 
+												<a href="ie.linkedin.com/in/markcumminswebdeveloper" target="_blank">
+													Linked <i style="border-right:0px;" class="fa fa-linkedin-square"></i>
+													</a>
+												</h2>
+												
 												</div>
 											<div class="col-sm-6 col-lg-8 left-border">
 												<h2>About,</h2>
@@ -180,7 +187,7 @@
 										</div>
 										<div class="row">
 											<br/>
-											<div class="col-md-3 col-sm-6 portfolio-item">
+											<div class="col-md-4 col-sm-6 portfolio-item">
 												<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
 													<div class="portfolio-hover">
 														<div class="portfolio-hover-content">
@@ -197,7 +204,7 @@
 													<small><p class="text-muted">CMS Web Application</p>
 														</div>
 												</div>
-												<div class="col-md-3 col-sm-6 portfolio-item">
+												<div class="col-md-4 col-sm-6 portfolio-item">
 													<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
 														<div class="portfolio-hover">
 															<div class="portfolio-hover-content">
@@ -214,7 +221,7 @@
 														<p class="text-muted">Project Management Application</p>
 													</div>
 												</div>
-												<div class="col-md-3 col-sm-6 portfolio-item">
+												<div class="col-md-4 col-sm-6 portfolio-item">
 													<a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
 														<div class="portfolio-hover">
 															<div class="portfolio-hover-content">
@@ -231,8 +238,25 @@
 														<p class="text-muted">Rostering Web Application</p>
 													</div>
 												</div>									
-												<div class="col-md-3 col-sm-6 portfolio-item">
+												<div class="col-md-4 col-sm-6 portfolio-item">
 													<a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+														<div class="portfolio-hover">
+															<div class="portfolio-hover-content">
+																<span class="fa-stack fa-lg">
+																	<i class="fa fa-circle fa-stack-2x"></i>
+																	<i class="fa fa-plus fa-stack-1x"></i>
+																</span>
+															</div>
+														</div>
+														<img src="assets/img/portfolio/trommons.png" class="img-responsive" alt="">
+													</a>
+													<div class="portfolio-caption">
+														<h4>Trommons</h4>
+														<p class="text-muted">Translation Web Application</p>
+													</div>
+												</div>
+												<div class="col-md-4 col-sm-6 portfolio-item">
+													<a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
 														<div class="portfolio-hover">
 															<div class="portfolio-hover-content">
 																<span class="fa-stack fa-lg">
@@ -245,6 +269,23 @@
 													</a>
 													<div class="portfolio-caption">
 														<h4>John Sweeney Fitness</h4>
+														<p class="text-muted">CMS Website</p>
+													</div>
+												</div>
+												<div class="col-md-4 col-sm-6 portfolio-item">
+													<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
+														<div class="portfolio-hover">
+															<div class="portfolio-hover-content">
+																<span class="fa-stack fa-lg">
+																	<i class="fa fa-circle fa-stack-2x"></i>
+																	<i class="fa fa-plus fa-stack-1x"></i>
+																</span>
+															</div>
+														</div>
+														<img src="assets/img/portfolio/il.png" class="img-responsive" alt="">
+													</a>
+													<div class="portfolio-caption">
+														<h4>Innovate Limerick</h4>
 														<p class="text-muted">CMS Website</p>
 													</div>
 												</div>
@@ -268,7 +309,7 @@
 											</div>
 											<div class="row">
 												<br/>
-												<div class="col-md-3 col-sm-6 portfolio-item">
+												<div class="col-md-6 col-sm-6 portfolio-item">
 													<a href="<?php echo base_url('/gambletron');?>" class="portfolio-link" >
 														<div class="portfolio-hover">
 															<div class="portfolio-hover-content">
@@ -282,10 +323,10 @@
 													</a>
 													<div class="portfolio-caption">
 														<h4>GambleTron</h4>
-														<small><p class="text-muted">Predicts Football Results</p>
+														<small><p class="text-muted">Football Results Calculator</p>
 														</div>
 												</div>
-												<div class="col-md-3 col-sm-6 portfolio-item">
+												<div class="col-md-6 col-sm-6 portfolio-item">
 													<a href="http://jsfiddle.net/markovski/mcVa9/" target="_blank" class="portfolio-link" >
 														<div class="portfolio-hover">
 															<div class="portfolio-hover-content">
@@ -328,6 +369,7 @@
 													<div class="clearfix"></div>
 
 													<div class="col-md-4 col-sm-6">
+														<div style="display:none;" class="anim-a">
 														<h2><i class="fa fa-code"></i> Programming Languages</h2>
 														<div class="hr"></div>
 														<p>Languages - PHP, Java, Python, ASP.Net, VB VB.Net, Visual Basic<br/>
@@ -335,14 +377,17 @@
 															Database -  SQL(mySQL msSQL)  <br/>
 															SCM (Version Control) - Git, SVN
 														</p>
+														</div>
 													</div>
 													<div class="col-md-4 hidden-sm hidden-xs">
 														<canvas id="doughnutChart"></canvas>
 													</div>
 													<div class="col-md-4 col-sm-6 text-center">
+														<div style="display:none;" class="anim-a">
 														<?php
 echo file_get_contents(base_url('assets/svg/pl_a.svg'));
 														?>
+														</div>
 													</div>
 													<div class="clearfix"></div><br/><br/><br/>
 
@@ -351,6 +396,7 @@ echo file_get_contents(base_url('assets/svg/pl_a.svg'));
 													</div>
 
 													<div class="col-md-4 col-sm-6 col-sm-push-8">
+														<div style="display:none;" class="anim-b">
 														<h2><i class="fa fa-code"></i> Programming Languages</h2>
 														<div class="hr"></div>
 														<p> More Languages - Javascript (JQuery, JQuery UI &amp; Mobile, AJAX) <br/>
@@ -361,14 +407,18 @@ echo file_get_contents(base_url('assets/svg/pl_a.svg'));
 															CMS - WordPress
 
 														</p>
+														</div>
 													</div>  
-													<div class="col-md-4 hidden-sm hidden-xs">											
+													<div class="col-md-4 hidden-sm hidden-xs">
+														<br/><br/>
 														<canvas id="doughnutChart-b"></canvas>
 													</div>
 													<div class="col-md-4 col-sm-6 col-sm-pull-8 text-center">
+														<div style="display:none;" class="anim-b">
 														<?php
 echo file_get_contents(base_url('assets/svg/pl_b.svg'));
 														?>
+														</div>
 													</div>
 
 													<div class="clearfix"></div><br/>	
@@ -377,6 +427,7 @@ echo file_get_contents(base_url('assets/svg/pl_b.svg'));
 													</div>
 
 													<div class="col-md-4 col-sm-6">
+														<div style="display:none;" class="anim-c">
 														<h2><i class="fa fa-laptop"></i>  
 															Operating Systems
 														</h2>
@@ -385,14 +436,17 @@ echo file_get_contents(base_url('assets/svg/pl_b.svg'));
 															Linux (Ubuntu, Fedora, Mint, Raspbian, ElementaryOS)<br/>
 															Mac OS
 														</p>
+														</div>
 													</div>
 													<div class="col-md-4 hidden-sm hidden-xs">
 														<canvas id="doughnutChart-c"></canvas>
 													</div>
 													<div class="col-md-4 col-sm-6 text-center">
+														<div style="display:none;" class="anim-c">
 														<?php
 echo file_get_contents(base_url('assets/svg/os.svg'));
 														?>
+														</div>
 													</div>
 													<div class="clearfix"></div><br/><br/>
 												</div>
@@ -507,261 +561,19 @@ echo file_get_contents(base_url('assets/svg/os.svg'));
 						</div>
 					</div>
 				</div>
-
-				<!-- Portfolio Modal 1 -->
-
-				<div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-content">
-						<div class="close-modal" data-dismiss="modal">
-							<div class="lr">
-								<div class="rl">
-								</div>
-							</div>
-						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-8 col-lg-offset-2">
-									<div class="modal-body">
-										<!-- Project Details Go Here -->
-										<h2>UL Students Union</h2>
-										<img class="img-responsive img-centered" src="assets/img/portfolio/logo-studentsunion-plain.png" alt="">
-										<p class="item-intro text-muted">CMS Web Application</p>
-										<hr/>
-										<h4 class="item-intro text-muted">Features</h4>
-
-										Photo gallery with user contributions.<br/>
-										Dedicated News, Events, and Activities section - “Wolves News Room”.<br/>
-										Listings - e.g. rooms, jobs, books. Can make new categories on the fly.<br/>
-										Information / Guides - pdfs/infographics/text describing how to do common things in UL/ULSU.<br/>
-										Public / Members Discussions Forum.<br/>
-										FAQ/Q&amp;A page where members can ask a question if not answered already.<br/>
-										Publications + Archives - for anything the Union produces & agendas/minutes.<br/>
-										Polling / Rating on homepage<br/>
-
-										<h4 class="item-intro text-muted">Social Integration</h4>
-										- sharing links, and better publicity of UL Wolves social media accounts.<br/>
-										Academic + Welfare Help Assessment Forms - when complete, advise student where to go for help.<br/>
-
-
-										<h4 class="item-intro text-muted">Registration</h4>
-										Student creates new Wolves account by connecting their UL student mail account (Outlook/OAuth).<br/>
-
-										<h4 class="item-intro text-muted">Design Notes</h4>
-										Uses SSL security.<br/>										
-										Responsive (layout changes for phones, regular screens, big screens).<br/>
-										Heavily integrates Facebook &amp; Twitter for sharing / publicity.<br/>
-										Single login for students to access UL Wolves service.<br/>
-										<br/>
-										<p>
-											<strong>Want to check it out?</strong>
-											<a href="http://www.ulwolves.ie/">ulwolves.ie</a>
-										</p>
-										<ul class="list-inline">
-											<li>Date: Feb 2015</li>
-											<li>Status: Live</li>
-											<li>Client: University of Limerick</li>
-										</ul>
-										<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Portfolio Modal 2 -->
-				<div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-content">
-						<div class="close-modal" data-dismiss="modal">
-							<div class="lr">
-								<div class="rl">
-								</div>
-							</div>
-						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-8 col-lg-offset-2">
-									<div class="modal-body">
-										<h2>BlueChief Portal</h2>
-										<img class="img-responsive img-centered" src="assets/img/portfolio/logo-portal-plain.png" alt="">
-										<p class="item-intro text-muted">Project Management Application</p>
-										<hr/>
-										<h4 class="item-intro text-muted">Features</h4>
-
-										Allows Clients to log in to<br/>
-										See draft / completed work<br/>
-										Download images we have created<br/>
-										View how-to guides<br/>
-										View analytics on their social media accounts and websites<br/>
-										Upload images/files to us<br/><br/>
-
-										Allows Admins to<br/>
-										View exactly what clients are getting<br/>
-										Keep track of files, projects &amp; deadlines.<br/><br/>
-
-										<ul class="list-inline">
-											<li>Date: Oct 2014</li>
-											<li>Status: On Hold</li>
-											<li>Client: BlueChief Social</li>
-										</ul>
-										<br/>
-										<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Portfolio Modal 3 -->
-				<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-content">
-						<div class="close-modal" data-dismiss="modal">
-							<div class="lr">
-								<div class="rl">
-								</div>
-							</div>
-						</div>
-						<div class="container">	
-							<div class="row">
-								<div class="col-lg-8 col-lg-offset-2">
-									<div class="modal-body">
-										<h2>RosterChief</h2>
-										<img class="img-responsive img-centered" src="img/portfolio/logo-rosterchief-plain.png" alt="">
-										<p class="item-intro text-muted">Project Management Application</p>
-										<hr/>
-										<h4 class="item-intro text-muted">Features</h4>
-
-										RosterChief is an online subscription employee scheduling, <br/>
-										time keeping &amp; record keeping service built with ease of use, <br/>
-										efficiency &amp; accessibility as our priority.<br/><br/>
-
-										RosterChief is used by employers through a browser and can be done anywhere <br/>
-										with Internet access. Scheduling is done effortlessly, reducing waste &amp; <br/>
-										increasing employee satisfaction. We have kept is really simple while offering <br/>
-										the best tools &amp; services available.<br/><br/>
-
-										Employees have a wide range of ways to access their hours; <br/>
-										The Website, mobile website, mobile app, facebook app. <br/>
-										They will be notified when hours are added/changed on their phone, <br/>
-										facebook and/or email. Employees can schedule holidays, <br/>
-										request certain hours, request a swap and more.<br/><br/>
-
-										<ul class="list-inline">
-											<li>Date: March 2014</li>
-											<li>Status: On Hold</li>
-											<li>Client: BlueChief Social</li>
-										</ul>
-										<br/>
-										<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Portfolio Modal 4 -->
-				<div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-					<div class="modal-content">
-						<div class="close-modal" data-dismiss="modal">
-							<div class="lr">
-								<div class="rl">
-								</div>
-							</div>
-						</div>
-						<div class="container">
-							<div class="row">
-								<div class="col-lg-8 col-lg-offset-2">
-									<div class="modal-body">
-										<h2>John Sweeney Fitness</h2>
-										<img class="img-responsive img-centered" src="assets/img/portfolio/logo-jsf-plain.png" alt="">
-										<p class="item-intro text-muted">Wordpress WebSite</p>
-										<hr/>
-										<h4 class="item-intro text-muted">Features</h4>
-
-										WordPress &amp; Foundation Responsive Framework<br/>
-										Multiple Blogs and Feedback<br/>
-										Content Management System <br/>
-										Custom design &amp; Visuals<br/>
-										Google Analytics<br/><br/>
-
-
-										<ul class="list-inline">
-											<li>Date: March 2014</li>
-											<li>Status: Live</li>
-											<li>Client: BlueChief Social</li>
-										</ul>
-
-										<p>
-											<strong>Want to check it out?</strong>
-											<a href="http://johnsweeneyfitness.com/">johnsweeneyfitness.com</a><br/>
-										</p>
-
-										<br/>
-										<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-
-				<div class="modal fade" id="spotifyModal" tabindex="-1" role="dialog" aria-labelledby="spotifyModal" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title" id="myModalLabel">Spotify Playlist</h4>
-							</div>
-							<div class="modal-body">
-								<iframe src="https://embed.spotify.com/?uri=spotify:user:comminski:playlist:2AC6nFiwjSf68hQKi7NMjc&theme=white" 
-										width="100%" height="380" frameborder="0" allowtransparency="true"
-										></iframe>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
-							</div>
-						</div>
-					</div>
-				</div>				
-
 				<footer>
 
-					<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-					<script src="<?php echo base_url('assets/js_fe/vendor/bootstrap.min.js');?>"></script>
-
-					<!-- parallax -->
-					<script type="text/javascript" src="<?php echo base_url('assets/js_fe/dependent/greensock/TweenMax.min.js');?>"></script>
-					<script type="text/javascript" src="<?php echo base_url('assets/js_fe/examples/general.js');?>"></script>
-					<script type="text/javascript" src="<?php echo base_url('assets/js_fe/examples/highlight.pack.js');?>"></script>
-					<script type="text/javascript" src="<?php echo base_url('assets/js_fe/examples/modernizr.custom.min.js');?>"></script>
-					<script type="text/javascript" src="<?php echo base_url('assets/js_fe/vendor/jquery.scrollmagic.js');?>"></script>
-					<script type="text/javascript" src="<?php echo base_url('assets/js_fe/vendor/jquery.scrollmagic.debug.js');?>"></script>
-					<script type="text/javascript" src="<?php echo base_url('assets/js_fe/Chart.Core.js');?>"></script>
-					<script type="text/javascript" src="<?php echo base_url('assets/js_fe/Chart.Doughnut.js');?>"></script>
-					<script type="text/javascript" src="<?php echo base_url('assets/js_fe/Chart.PolarArea.js');?>"></script>
-					<script type="text/javascript" src="<?php echo base_url('assets/js_fe/Chart.Radar.js');?>"></script>
-
-					<script src="<?php echo base_url('assets/js_fe/vendor/snap.svg-min.js');?>"></script>
-					<!--
-<script src="js/waves.js"></script>		
-
-<script type="text/javascript">
-var w = new Waves();
-w.displayEffect();
-</script>
--->
-					<script src="<?php echo base_url('assets/js_fe/svg_head.js');?>"></script>
-					<script src="<?php echo base_url('assets/js_fe/svg_a.js');?>"></script>
-					<script src="<?php echo base_url('assets/js_fe/svg_b.js');?>"></script>
-					<script src="<?php echo base_url('assets/js_fe/svg_c.js');?>"></script>
 					<script type="text/javascript"
 							src="<?php echo base_url('assets/js_fe/maps.js?key=AIzaSyAjMTyZ7wKxUBJAsxuO9silbzU5g0JB7uo');?>">
 					</script>
-					<script src="<?php echo base_url('assets/js_fe/main.js');?>"></script>
+					
+<?php if(ENVIRONMENT === 'production'): ?>
+	<script src="<?php echo base_url('assets/dist/frontend.min.js');?>"></script>
+<?php else: ?>
+	<script src="<?php echo base_url('assets/dist/frontend.js');?>"></script>
+<?php endif; ?>
+
+					
 
 					<!-- Google Analytics -->
 					<script>

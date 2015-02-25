@@ -1,4 +1,4 @@
-function draw_svg(my_path, anim_time, strokeWidth, s_color){
+window.draw_svg = function(my_path, anim_time, strokeWidth, s_color){
 
     var lenB = my_path.getTotalLength();
 
@@ -13,7 +13,7 @@ function draw_svg(my_path, anim_time, strokeWidth, s_color){
     }).animate({"stroke-dashoffset": 0}, anim_time, mina.easeinout);
 }
 
-function svg_a_animate(){
+window.svg_a_animate = function(){
         
     var os_svg = Snap.select('#os-svg');
     os_svg.attr({fill: "#333"});

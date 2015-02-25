@@ -1,6 +1,6 @@
 
 
-    function svg_c_animate(){
+window.svg_c_animate = function(){
         
     var svg_c = Snap("#svg_c");    
     

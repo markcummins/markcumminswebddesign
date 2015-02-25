@@ -1,5 +1,3 @@
-I am a web developer with BlueChief Social and have been for the last year and a half. I am based in Limerick and build cool responsive websites like this one.
-
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 ?><!DOCTYPE html>

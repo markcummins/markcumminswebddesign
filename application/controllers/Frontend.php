@@ -8,5 +8,6 @@ class frontend extends CI_Controller {
 		$d['upcoming_fixtures'] = "";// = get_upcoming_fixtures();
 		
 		$this->load->view('v_landing_page', $d);
+		$this->load->view('v_landing_page_modals', $d);
 	}
 }

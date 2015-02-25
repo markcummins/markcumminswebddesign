@@ -35,33 +35,6 @@ function initialize() {
 
 google.maps.event.addDomListener(window, 'load', initialize);
 
-
-/*if (document.getElementById('map-canvas-room')){
-
-	var map_title = $('#map-canvas-room').attr('data-title');
-	var lat = ($('#map-canvas-room').attr('data-lat'));
-	var lng = ($('#map-canvas-room').attr('data-lng'));
-
-	var myLatlng = new google.maps.LatLng(lat, lng);
-
-	var mapOptions = {
-		scrollwheel: false,
-		zoom: 15,
-		center: myLatlng,
-		mapTypeId: google.maps.MapTypeId.ROADMAP
-	};
-
-	var map = new google.maps.Map(document.getElementById('map-canvas-room'), mapOptions);
-
-	//marker1.....
-	var marker = new google.maps.Marker({
-		position: myLatlng,
-		map: map,
-		title: map_title
-	});
-}*/
-
-
 (function ($) {
 	
 	$('#php_logo').show();
@@ -73,7 +46,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 			
 			if(parseInt($('#mail-num-a').html()) + parseInt($('#mail-num-b').html()) == $('#mail-ans').val()){
 				
-				$('#send-mail').hide();
+				//$('#send-mail').hide();
 				$.ajax({
 					type: "POST",
 					url: 'ajax/send_mail',
@@ -99,114 +72,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 //			responsive: true
 //		}
 		// Doughnut Chart Options
-		var doughnutOptions = {
-			responsive: true
-			/*segmentShowStroke : true,
-			segmentStrokeColor : "#fff",
-			segmentStrokeWidth : 2,
-			percentageInnerCutout : 50,
-			animation : true,
-			animationSteps : 100,
-			animationEasing : "easeOutBounce",
-			animateRotate : true,
-			animateScale : true,
-			onAnimationComplete : null*/
-		}
-
-
-		// Doughnut Chart Data
-		var doughnutData = [
-			{
-				value: 40,
-				color:"#2182F2",
-				highlight: "#FF5A5E",
-				label: "PHP"
-			},
-			{
-				value: 15,
-				color: "#DE9100",
-				highlight: "#5AD3D1",
-				label: "Java"
-			},
-			{
-				value: 15,
-				color: "#CC0E48",
-				highlight: "#FFC870",
-				label: "ASP.Net"
-			},
-			{
-				value: 10,
-				color: "#444",
-				highlight: "#FFC870",
-				label: "VB VB.Net"
-			},
-			{
-				value: 10,
-				color: "#6EBE74",
-				highlight: "#FFC870",
-				label: "Python"
-			}
-		]
 		
-		// Doughnut Chart Data
-		var doughnutData_b = {
-			labels: ["JQuery/AJAX", "The Basics", "Frameworks", "Task Runners", "Social API's", "CMS"],
-				datasets: [
-					{
-						label: "",
-						fillColor: "rgba(220,220,220,0.2)",
-						strokeColor: "rgba(222, 145, 0, 0.8)",
-						pointColor: "#DE9100",
-						pointStrokeColor: "#fff",
-						pointHighlightFill: "#fff",
-						pointHighlightStroke: "rgba(220,220,220,1)",
-						data: [95, 0, 89, 0, 70, 0]
-					},
-					{
-						label: "",
-						fillColor: "rgba(151,187,205,0.2)",
-						strokeColor: "rgba(33, 130, 242, 0.8)",
-						pointColor: "#2182F2",
-						pointStrokeColor: "#fff",
-						pointHighlightFill: "#fff",
-						pointHighlightStroke: "rgba(151,187,205,1)",
-						data: [0, 92, 0, 65, 0, 65]
-					}
-				]
-			};
-
-		var doughnutData_c = [
-			{
-				value: 100,
-				color:"#2182F2",
-				highlight: "#FF5A5E",
-				label: "Linux/Unix"
-			},
-			{
-				value: 90,
-				color: "#DE9100",
-				highlight: "#5AD3D1",
-				label: "Windows"
-			},
-			{
-				value: 75,
-				color: "#CC0E48",
-				highlight: "#FFC870",
-				label: "Mac"
-			}
-		];
-
-
-		//Get the context of the Doughnut Chart canvas element we want to select
-		var ctx = document.getElementById("doughnutChart").getContext("2d");
-		var ctx_b = document.getElementById("doughnutChart-b").getContext("2d");
-		var ctx_c = document.getElementById("doughnutChart-c").getContext("2d");
-
-		// Create the Doughnut Chart
-		var mydoughnutChart = new Chart(ctx).Doughnut(doughnutData, doughnutOptions);
-		var mydoughnutChart_b = new Chart(ctx_b).Radar(doughnutData_b, doughnutOptions);
-		var mydoughnutChart_c = new Chart(ctx_c).PolarArea(doughnutData_c, doughnutOptions);
-
 
 		// hide .navbar first
 		$(".navbar").hide();
@@ -274,11 +140,114 @@ $(document).ready(function(){
 	setTimeout(function(){draw_hr("#svg_hr");},1500);
 	
 	if($(window).width() > 768){
-		var svg_arr = [200, 300, 670, 1000];
+		var svg_arr = [0, 2320, 2680, 3060];
 	}
 	if($(window).width() <= 768){
 		var svg_arr = [50, 455, 1150, 1650];
 	}
+	
+	var doughnutOptions = {
+		responsive: true,
+		//			segmentShowStroke : true,
+		//			segmentStrokeColor : "#fff",
+		//			segmentStrokeWidth : 2,
+		//			percentageInnerCutout : 50,
+		animation : true,
+		animationSteps : 100,
+		animationEasing : "easeOutBounce",
+		animateRotate : true,
+		animateScale : true,
+		//			onAnimationComplete : null
+	}
+
+
+	// Doughnut Chart Data
+	var doughnutData = [
+		{
+			value: 40,
+			color:"#2182F2",
+			highlight: "#FF5A5E",
+			label: "PHP"
+		},
+		{
+			value: 15,
+			color: "#DE9100",
+			highlight: "#5AD3D1",
+			label: "Java"
+		},
+		{
+			value: 15,
+			color: "#CC0E48",
+			highlight: "#FFC870",
+			label: "ASP.Net"
+		},
+		{
+			value: 10,
+			color: "#444",
+			highlight: "#FFC870",
+			label: "VB VB.Net"
+		},
+		{
+			value: 10,
+			color: "#6EBE74",
+			highlight: "#FFC870",
+			label: "Python"
+		}
+	]
+
+	// Doughnut Chart Data
+	var doughnutData_b = {
+		labels: ["JQuery/AJAX", "The Basics", "Frameworks", "Task Runners", "Social API's", "CMS"],
+		datasets: [
+			{
+				label: "",
+				fillColor: "rgba(220,220,220,0.2)",
+				strokeColor: "rgba(222, 145, 0, 0.8)",
+				pointColor: "#DE9100",
+				pointStrokeColor: "#fff",
+				pointHighlightFill: "#fff",
+				pointHighlightStroke: "rgba(220,220,220,1)",
+				data: [95, 0, 89, 0, 70, 0]
+			},
+			{
+				label: "",
+				fillColor: "rgba(151,187,205,0.2)",
+				strokeColor: "rgba(33, 130, 242, 0.8)",
+				pointColor: "#2182F2",
+				pointStrokeColor: "#fff",
+				pointHighlightFill: "#fff",
+				pointHighlightStroke: "rgba(151,187,205,1)",
+				data: [0, 92, 0, 65, 0, 65]
+			}
+		]
+	};
+
+	var doughnutData_c = [
+		{
+			value: 100,
+			color:"#2182F2",
+			highlight: "#FF5A5E",
+			label: "Linux/Unix"
+		},
+		{
+			value: 90,
+			color: "#DE9100",
+			highlight: "#5AD3D1",
+			label: "Windows"
+		},
+		{
+			value: 75,
+			color: "#CC0E48",
+			highlight: "#FFC870",
+			label: "Mac"
+		}
+	];
+
+
+	//Get the context of the Doughnut Chart canvas element we want to select
+	window.ctx = document.getElementById("doughnutChart").getContext("2d");
+	window.ctx_b = document.getElementById("doughnutChart-b").getContext("2d");
+	window.ctx_c = document.getElementById("doughnutChart-c").getContext("2d");
 	
 	$(function(){
 		var trig_a, trig_b, trig_c, trig_d = false;
@@ -287,22 +256,31 @@ $(document).ready(function(){
 		draw_single_hr("#svg_hr_about", '#2182f2');
 		
 		$(window).scroll(function() {
-
+			
 			if ($(this).scrollTop() >= svg_arr[0] && !trig_a) {
 				trig_a = true;
 			}
 			if ($(this).scrollTop() >= svg_arr[1] && !trig_b) {
 				trig_b = true;
+				
+				$('.anim-a').fadeIn("slow");
+				var mydoughnutChart = new Chart(ctx).Doughnut(doughnutData, doughnutOptions);				
 				draw_single_hr("#svg_hr_b", '#de9100'); 
 				svg_b_animate();
 			}
 			if ($(this).scrollTop() >= svg_arr[2] && !trig_c) {
 				trig_c = true;
+				
+				$('.anim-b').fadeIn("slow");
+				var mydoughnutChart_b = new Chart(ctx_b).Radar(doughnutData_b, doughnutOptions);
 				draw_single_hr("#svg_hr_c", '#cc0e48'); 
 				svg_c_animate();
 			}
 			if ($(this).scrollTop() >= svg_arr[3] && !trig_d) {
 				trig_d = true;
+				
+				$('.anim-c').fadeIn("slow");
+				var mydoughnutChart_c = new Chart(ctx_c).PolarArea(doughnutData_c, doughnutOptions);
 				svg_a_animate();
 			}
 		});
