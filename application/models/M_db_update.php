@@ -15,13 +15,13 @@ Class m_db_update extends CI_Model {
 			$stream_context = stream_context_create($reqPrefs);
 			$response = file_get_contents($uri, false, $stream_context);
 			$leagues = json_decode($response);
-
+		
 			foreach($leagues as $l){
 				
 				$fix_href = $l->_links->self->href.'/fixtures/';
 				$league_fix_name = $l->league.'_'.$l->year.'_FIXTURES';			
 				
-//				error_log($league_fix_name);
+				error_log($league_fix_name);
 				$uri = $fix_href; // /fixtures/?matchday=22';
 				$reqPrefs['http']['method'] = 'GET';
 				$reqPrefs['http']['header'] = 'X-Auth-Token: e7b28357ca8c4dd49ed2ffad0e5b7671';
@@ -54,6 +54,7 @@ Class m_db_update extends CI_Model {
 				//return $fixtures;
 				$this->db->where('id >', 0);
 				$this->db->delete($league_fix_name);
+				
 				$this->db->insert_batch($league_fix_name, $epl);
 			}
 	}

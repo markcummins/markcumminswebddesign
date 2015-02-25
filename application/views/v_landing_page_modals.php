@@ -10,7 +10,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
+				<div class="col-lg-10 col-lg-offset-1">
 					<div class="modal-body">
 						<!-- Project Details Go Here -->
 						<a href="http://www.ulwolves.ie/" target="_blank">
@@ -21,7 +21,22 @@
 						<p class="item-intro text-muted">CMS Web Application</p>
 						<a href="http://www.ulwolves.ie/" target="_blank" class="label label-primary">www.ulwolves.ie</a>
 						<hr/>
-						<h4 class="item-intro text-muted">Features</h4>
+						
+						
+						
+						<h4 class="item-intro text-muted"><i class="fa fa-camera"></i> Screenshots</h4>
+						
+						<div class="col-md-4 portfolio-item hidden-xs hidden-sm">
+								<img src="assets/img/portfolio/ulss1.png" class="img-responsive thumbnail">
+						</div>
+						<div class="col-sm-6 col-md-4 portfolio-item">
+							<img src="assets/img/portfolio/ulss2.png" class="img-responsive thumbnail">
+						</div>
+						<div class="col-sm-6 col-md-4 portfolio-item hidden-xs">
+							<img src="assets/img/portfolio/ulss3.png" class="img-responsive thumbnail">
+						</div>
+								
+						<h4 class="item-intro text-muted"><i class="fa fa-plus-circle"></i> Features</h4>
 
 						Photo gallery with user contributions.<br/>
 						Dedicated News, Events, and Activities section - “Wolves News Room”.<br/>
@@ -76,14 +91,27 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
+				<div class="col-lg-10 col-lg-offset-1">
 					<div class="modal-body">
 						
 						<h2>BlueChief Portal</h2>
 						<img class="img-responsive img-centered" src="assets/img/portfolio/logo-portal-plain.png" alt="">
 						<p class="item-intro text-muted">Project Management Application</p>
 						<hr/>
-						<h4 class="item-intro text-muted">Features</h4>
+						
+						<h4 class="item-intro text-muted"><i class="fa fa-camera"></i> Screenshots</h4>
+						
+						<div class="col-md-4 portfolio-item hidden-xs hidden-sm">
+							<img src="assets/img/portfolio/bcss1.png" class="img-responsive thumbnail">
+						</div>
+						<div class="col-sm-6 col-md-4 portfolio-item">
+							<img src="assets/img/portfolio/bcss2.png" class="img-responsive thumbnail">
+						</div>
+						<div class="col-sm-6 col-md-4 portfolio-item hidden-xs">
+							<img src="assets/img/portfolio/bcss3.png" class="img-responsive thumbnail">
+						</div>
+						<div class="clearfix"></div>
+						<h4 class="item-intro text-muted"><i class="fa fa-plus-circle"></i> Features</h4>
 
 							Allows Clients to log in to<br/>
 							See draft / completed work<br/>
@@ -121,14 +149,21 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
+				<div class="col-lg-10 col-lg-offset-1">
 					<div class="modal-body">
 						
-						<h2>RosterChief</h2>
+						<h2>RosterChief</h2>																		
+						
 						<img class="img-responsive img-centered" src="<?php echo base_url('assets/img/portfolio/logo-rosterchief-plain.png');?>" alt="">
-						<p class="item-intro text-muted">Project Management Application</p>
+						<p class="item-intro text-muted">Employee Scheduling Application</p>
 						<hr/>
-						<h4 class="item-intro text-muted">Features</h4>
+						
+						<div class="col-md-8 col-md-offset-2 portfolio-item hidden-xs hidden-sm">
+							<img src="assets/img/portfolio/rcss.png" class="img-responsive">
+						</div>
+						<div class="clearfix"></div>
+						
+						<h4 class="item-intro text-muted"><i class="fa fa-plus-circle"></i> Features</h4>
 
 						RosterChief is an online subscription employee scheduling, <br/>
 						time keeping &amp; record keeping service built with ease of use, <br/>
@@ -144,7 +179,7 @@
 						They will be notified when hours are added/changed on their phone, <br/>
 						facebook and/or email. Employees can schedule holidays, <br/>
 						request certain hours, request a swap and more.<br/><br/>
-
+						<br/>
 						<ul class="list-inline">
 							<li>Date: March 2014</li>
 							<li>Status: <span class="label label-primary">In Development</span></li>
@@ -169,7 +204,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
+				<div class="col-lg-10 col-lg-offset-1">
 					<div class="modal-body">
 
 						<a href="http://www.trommons.org/" target="_blank">
@@ -180,7 +215,22 @@
 						<p class="item-intro text-muted">Translation Web Application</p>
 						<a href="http://www.trommons.org/" target="_blank" class="label label-primary">www.trommons.org</a>
 						<hr/>
-						<h4 class="item-intro text-muted">Features</h4>
+						
+						<h4 class="item-intro text-muted"><i class="fa fa-camera"></i> Screenshots</h4>
+
+						<div class="col-md-4 portfolio-item hidden-xs hidden-sm">
+							<img src="assets/img/portfolio/trss1.png" class="img-responsive thumbnail">
+						</div>
+						<div class="col-sm-6 col-md-4 portfolio-item">
+							<img src="assets/img/portfolio/trss2.png" class="img-responsive thumbnail">
+						</div>
+						<div class="col-sm-6 col-md-4 portfolio-item hidden-xs">
+							<img src="assets/img/portfolio/trss3.png" class="img-responsive thumbnail">
+						</div>
+						<div class="clearfix"></div>
+						
+						
+						<h4 class="item-intro text-muted"><i class="fa fa-plus-circle"></i> Features</h4>
 
 						The Translation Commons (Trommons) is the non-market translation <br/>
 						hub where thousands of language volunteers and those who require <br/>
@@ -217,7 +267,7 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-8 col-lg-offset-2">
+				<div class="col-lg-10 col-lg-offset-1">
 					<div class="modal-body">
 						
 						<a href="http://johnsweeneyfitness.com/" target="_blank">
@@ -227,7 +277,21 @@
 						<p class="item-intro text-muted"><i class="fa fa-wordpress"></i> Wordpress WebSite</p>
 						<a href="http://johnsweeneyfitness.com/" target="_blank" class="label label-primary">www.johnsweeneyfitness.com</a>
 						<hr/>
-						<h4 class="item-intro text-muted">Features</h4>
+						
+						<h4 class="item-intro text-muted"><i class="fa fa-camera"></i> Screenshots</h4>
+
+						<div class="col-md-4 portfolio-item hidden-xs hidden-sm">
+							<img src="assets/img/portfolio/jsss1.png" class="img-responsive thumbnail">
+						</div>						
+						<div class="col-sm-6 col-md-4 portfolio-item hidden-xs">
+							<img src="assets/img/portfolio/jsss3.png" class="img-responsive thumbnail">
+						</div>
+						<div class="col-sm-6 col-md-4 portfolio-item">
+							<img src="assets/img/portfolio/jsss2.png" class="img-responsive thumbnail">
+						</div>
+						<div class="clearfix"></div>
+						
+						<h4 class="item-intro text-muted"><i class="fa fa-plus-circle"></i> Features</h4>
 
 						WordPress &amp; Foundation Responsive Framework<br/>
 						Multiple Blogs and Feedback<br/>
@@ -276,7 +340,7 @@
 						<p class="item-intro text-muted"><i class="fa fa-wordpress"></i> Wordpress WebSite</p>
 						<a href="http://www.innovatelimerick.ie/" target="_blank" class="label label-primary">www.innovatelimerick.ie</a>
 						<hr/>
-						<h4 class="item-intro text-muted">Features</h4>
+						<h4 class="item-intro text-muted"><i class="fa fa-plus-circle"></i> Features</h4>
 
 						Content Management System <br/>
 						Event Registration &amp; Ticketing<br/>
@@ -290,63 +354,11 @@
 							<li>Client: Innovate Limerick</li>
 						</ul>
 						<br/>
-						<!--
-<hr/>
-<a href="http://johnsweeneyfitness.com/" target="_blank" class="label label-primary">www.johnsweeneyfitness.com</a><br/>
-<br/>
--->
-						<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
 
+						<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-
-
-	<!-- Portfolio Modal 5
-	<div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-		<div class="modal-content">
-			<div class="close-modal" data-dismiss="modal">
-				<div class="lr">
-					<div class="rl">
-					</div>
-				</div>
-			</div>
-			<div class="container">
-				<div class="row">
-					<div class="col-lg-8 col-lg-offset-2">
-						<div class="modal-body">
-							<h2>John Sweeney Fitness</h2>
-							<img class="img-responsive img-centered" src="assets/img/portfolio/logo-jsf-plain.png" alt="">
-							<p class="item-intro text-muted">Wordpress WebSite</p>
-							<hr/>
-							<h4 class="item-intro text-muted">Features</h4>
-
-							WordPress &amp; Foundation Responsive Framework<br/>
-							Multiple Blogs and Feedback<br/>
-							Content Management System <br/>
-							Custom design &amp; Visuals<br/>
-							Google Analytics<br/><br/>
-
-
-							<ul class="list-inline">
-								<li>Date: March 2014</li>
-								<li>Status: Live</li>
-								<li>Client: BlueChief Social</li>
-							</ul>
-
-							<p>
-								<strong>Want to check it out?</strong>
-								<a href="http://johnsweeneyfitness.com/">johnsweeneyfitness.com</a><br/>
-							</p>
-
-							<br/>
-							<button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>	
