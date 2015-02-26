@@ -78,6 +78,11 @@
 					<li><a href="#portfolio">Portfolio</a></li>
 					<li class="active"><a href="#cv">C.V</a></li>
 					<li><a href="#contact">Contact</a></li>
+					<li>
+						<a href="https://www.linkedin.com/in/markcumminswebdeveloper" target="_blank">
+						Linked <i style="border-right:0px;" class="fa fa-linkedin-square"></i>
+						</a>
+					</li>
 				</ul>
 				<!--
 <ul class="nav navbar-nav navbar-right">
@@ -127,7 +132,7 @@
 												<h2>My Name is Mark Cummins,</h2>
 												<br/>
 												<h2 style="display:inline;"> 
-												<a href="ie.linkedin.com/in/markcumminswebdeveloper" target="_blank">
+													<a href="https://www.linkedin.com/in/markcumminswebdeveloper" target="_blank">
 													Linked <i style="border-right:0px;" class="fa fa-linkedin-square"></i>
 													</a>
 												</h2>
