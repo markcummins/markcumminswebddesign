@@ -191,7 +191,10 @@
 									<div class="container">
 										<div class="row">
 											<div class="col-lg-12 text-center">
-												<h2 class="section-heading">Portfolio</h2>
+												<h2 class="section-heading">
+													<i class="fa fa-history fa-fw"></i>
+													Portfolio
+												</h2>
 												<h3 class="section-subheading text-muted">Web Development Portfolio.</h3><br/>
 											</div>
 										</div>
@@ -313,13 +316,34 @@
 										<div class="container">
 											<div class="row">
 												<div class="col-lg-12 text-center">
-													<h2 class="section-heading">Labs</h2>
-													<h3 class="section-subheading text-muted">Cool Experiments.</h3><br/>
+													<h2 class="section-heading">
+														<i class="fa fa-flask fa-fw"></i>
+														Labs
+													</h2>
+													<h3 class="section-subheading text-muted">Experiments</h3><br/>
 												</div>
 											</div>
 											<div class="row">
 												<br/>
-												<div class="col-md-6 col-sm-6 portfolio-item">
+												<div class="col-md-3 col-sm-12 portfolio-item">
+													<a href="http://jsfiddle.net/markovski/wo30q43h/9/" target="_blank" class="portfolio-link" >
+														<div class="portfolio-hover">
+															<div class="portfolio-hover-content">
+																<span class="fa-stack fa-lg">
+																	<i class="fa fa-circle fa-stack-2x"></i>
+																	<i class="fa fa-plus fa-stack-1x"></i>
+																</span>
+															</div>
+														</div>
+														<img src="assets/img/portfolio/atari.jpg" class="img-responsive" alt="">
+													</a>
+													<div class="portfolio-caption">
+														<h4>JS Canvas Breakout</h4>
+														<small><p class="text-muted">HTML5 Canvas Version of Atari's Breakout</p>
+															</div>
+												</div>
+													
+												<div class="col-md-6 col-sm-12 portfolio-item">
 													<a href="<?php echo base_url('/gambletron');?>" class="portfolio-link" >
 														<div class="portfolio-hover">
 															<div class="portfolio-hover-content">
@@ -336,8 +360,9 @@
 														<small><p class="text-muted">Football Results Calculator</p>
 														</div>
 												</div>
-												<div class="col-md-6 col-sm-6 portfolio-item">
-													<a href="http://jsfiddle.net/markovski/mcVa9/" target="_blank" class="portfolio-link" >
+													
+												<div class="col-md-3 col-sm-12 portfolio-item">
+													<a href="http://jsfiddle.net/markovski/mcVa9/1" target="_blank" class="portfolio-link" >
 														<div class="portfolio-hover">
 															<div class="portfolio-hover-content">
 																<span class="fa-stack fa-lg">
