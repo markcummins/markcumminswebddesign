@@ -75,8 +75,8 @@
 			<!-- Collect the nav links, forms, and other content for toggling -->
 			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#cv">C.V</a></li>
 					<li><a href="#portfolio">Portfolio</a></li>
+					<li class="active"><a href="#cv">C.V</a></li>
 					<li><a href="#contact">Contact</a></li>
 				</ul>
 				<!--
@@ -157,9 +157,14 @@
 													and build cool responsive websites like this one.</p>
 
 												<p>I <span class="lead">graduated</span> from UL in 2013 
-													(Grad Dip in Computing <sup>LEVEL 9</sup>)
-													with <span class="lead">first class honors</span>, worked
-													with the <span class="lead">LRC</span> (Localization Research Center) 
+													(
+													<a href="http://www.csis.ul.ie/course/LM330" target="_blank">Grad Dip in Computing 
+													<sup>LEVEL 9</sup> <span class="lead"><i class="fa fa-graduation-cap"></i></span></a> 
+													)
+													with <span class="lead">first class honors</span> and
+													learned Java,<span class="lead"> ASP.NET</span>, VB.NET, SQL and much more.
+													<br/><br/>
+													I worked with the <span class="lead">LRC</span> (Localization Research Center) 
 													for a few months as a 
 													<span class="lead">PHP developer </span>
 													before joining
@@ -372,7 +377,7 @@
 														<div style="display:none;" class="anim-a">
 														<h2><i class="fa fa-code"></i> Programming Languages</h2>
 														<div class="hr"></div>
-														<p>Languages - PHP, Java, Python, ASP.Net, VB VB.Net, Visual Basic<br/>
+														<p>Languages - PHP, Java, Python, ASP.Net, VB.Net, VB<br/>
 															Fremeworks - Codeigniter, Slim<br/>
 															Database -  SQL(mySQL msSQL)  <br/>
 															SCM (Version Control) - Git, SVN
